@@ -5,6 +5,9 @@ import (
 )
 
 func TestCreateReddit(t *testing.T) {
-  // TODO: Complete the test
-  t.Error("Need to complete this test")
+  var reddit *Reddit = NewReddit()
+
+  if reddit == nil {
+    t.Error("Found nil while creating a Reddit")
+  }
 }
