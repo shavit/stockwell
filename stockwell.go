@@ -1,7 +1,13 @@
 package stockwell
 
-type Reddit struct {}
+type Reddit struct {
+  conn *Connection
+}
 
-func NewReddit() *Reddit {
-  return new(Reddit)
+func NewReddit() (r *Reddit) {
+  r = &Reddit{
+    conn: NewConnection(),
+  }
+
+  return r
 }
