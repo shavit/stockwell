@@ -1,4 +1,4 @@
-package reddit
+package stockwell
 
 import (
   "testing"

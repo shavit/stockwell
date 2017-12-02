@@ -1,4 +1,4 @@
-package reddit
+package stockwell
 
 type Reddit struct {}
 
