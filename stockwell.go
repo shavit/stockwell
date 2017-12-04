@@ -43,7 +43,5 @@ func (r *Reddit) get(u string) (body []byte, err error) {
   }
   defer resp.Body.Close()
 
-  body, err = ioutil.ReadAll(resp.Body)
-
-  return body, err
+  return ioutil.ReadAll(resp.Body)
 }
