@@ -1,4 +1,5 @@
 build:
+	docker image rm itstommy/stockwell
 	docker build -t itstommy/stockwell .
 
 start_psql:
