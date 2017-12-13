@@ -3,6 +3,7 @@ build:
 	docker build -t itstommy/stockwell .
 
 start_psql:
+	docker stop stockwell_psql
 	docker run --rm \
 		--name stockwell_psql \
 		-td postgresql:9.6.4
