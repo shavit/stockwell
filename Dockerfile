@@ -15,4 +15,4 @@ RUN go get ./...
 
 # Arguments will override
 # CMD ["go", "run", "main.go"]
-CMD ["bash"]
+#CMD ["bash"]
